@@ -20,7 +20,7 @@ func main() {
 	// r.Run()
 
 	http.HandleFunc("/", dog)
-	http.HandleFunc("/toby.jpg", dogPic)
+	http.HandleFunc("/model", dogPic)
 	http.ListenAndServe(":8080", nil)
 }
 
@@ -30,7 +30,7 @@ func dog(w http.ResponseWriter, req *http.Request) {
 }
 
 func dogPic(w http.ResponseWriter, req *http.Request) {
-	f, err := os.Open("toby.jpg")
+	f, err := os.Open("pa_warrior")
 	if err != nil {
 		http.Error(w, "file not found", 404)
 		return
