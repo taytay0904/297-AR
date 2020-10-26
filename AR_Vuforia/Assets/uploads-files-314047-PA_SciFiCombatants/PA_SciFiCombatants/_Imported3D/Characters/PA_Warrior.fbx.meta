@@ -1,89 +1,245 @@
 fileFormatVersion: 2
 guid: cc633396b5f95da4b916357a5508ee4f
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: PA_Warrior
-    100004: PA_WarriorBody
-    100006: PA_WarriorControl
-    100008: PA_WarriorLtFrontLeg1
-    100010: PA_WarriorLtFrontLeg2
-    100012: PA_WarriorLtFrontLeg3
-    100014: PA_WarriorLtRearLeg1
-    100016: PA_WarriorLtRearLeg2
-    100018: PA_WarriorRoot
-    100020: PA_WarriorRtFrontLeg1
-    100022: PA_WarriorRtFrontLeg2
-    100024: PA_WarriorRtRearLeg1
-    100026: PA_WarriorRtRearLeg2
-    100028: PA_WarriorTail1
-    100030: PA_WarriorTail2
-    100032: PA_WarriorTail3
-    100034: PA_WarriorTail4
-    100036: PA_WarriorTail5
-    100038: PA_WarriorWeapon1
-    100040: PA_WarriorWeapon2
-    100042: swarmWarriorLtFrontLeg4
-    100044: swarmWarriorLtFrontLeg5
-    100046: swarmWarriorLtRearLeg3
-    100048: swarmWarriorLtRearLeg4
-    100050: swarmWarriorLtRearLeg5
-    100052: swarmWarriorRtFrontLeg3
-    100054: swarmWarriorRtFrontLeg4
-    100056: swarmWarriorRtFrontLeg5
-    100058: swarmWarriorRtRearLeg3
-    100060: swarmWarriorRtRearLeg4
-    100062: swarmWarriorRtRearLeg5
-    400000: //RootNode
-    400002: PA_Warrior
-    400004: PA_WarriorBody
-    400006: PA_WarriorControl
-    400008: PA_WarriorLtFrontLeg1
-    400010: PA_WarriorLtFrontLeg2
-    400012: PA_WarriorLtFrontLeg3
-    400014: PA_WarriorLtRearLeg1
-    400016: PA_WarriorLtRearLeg2
-    400018: PA_WarriorRoot
-    400020: PA_WarriorRtFrontLeg1
-    400022: PA_WarriorRtFrontLeg2
-    400024: PA_WarriorRtRearLeg1
-    400026: PA_WarriorRtRearLeg2
-    400028: PA_WarriorTail1
-    400030: PA_WarriorTail2
-    400032: PA_WarriorTail3
-    400034: PA_WarriorTail4
-    400036: PA_WarriorTail5
-    400038: PA_WarriorWeapon1
-    400040: PA_WarriorWeapon2
-    400042: swarmWarriorLtFrontLeg4
-    400044: swarmWarriorLtFrontLeg5
-    400046: swarmWarriorLtRearLeg3
-    400048: swarmWarriorLtRearLeg4
-    400050: swarmWarriorLtRearLeg5
-    400052: swarmWarriorRtFrontLeg3
-    400054: swarmWarriorRtFrontLeg4
-    400056: swarmWarriorRtFrontLeg5
-    400058: swarmWarriorRtRearLeg3
-    400060: swarmWarriorRtRearLeg4
-    400062: swarmWarriorRtRearLeg5
-    4300000: PA_Warrior
-    7400000: PA_WarriorForward_Clip
-    7400002: PA_WarriorBackward_Clip
-    7400004: PA_WarriorLeft_Clip
-    7400006: PA_WarriorRight_Clip
-    7400008: PA_WarriorStop_Clip
-    7400010: PA_WarriorIdle_Clip
-    7400012: PA_WarriorAttack_Clip
-    7400014: PA_WarriorCollapse_Clip
-    7400016: PA_WarriorRecover_Clip
-    7400018: PA_WarriorDeath_Clip
-    9500000: //RootNode
-    13700000: PA_Warrior
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: PA_Warrior
+  - first:
+      1: 100004
+    second: PA_WarriorBody
+  - first:
+      1: 100006
+    second: PA_WarriorControl
+  - first:
+      1: 100008
+    second: PA_WarriorLtFrontLeg1
+  - first:
+      1: 100010
+    second: PA_WarriorLtFrontLeg2
+  - first:
+      1: 100012
+    second: PA_WarriorLtFrontLeg3
+  - first:
+      1: 100014
+    second: PA_WarriorLtRearLeg1
+  - first:
+      1: 100016
+    second: PA_WarriorLtRearLeg2
+  - first:
+      1: 100018
+    second: PA_WarriorRoot
+  - first:
+      1: 100020
+    second: PA_WarriorRtFrontLeg1
+  - first:
+      1: 100022
+    second: PA_WarriorRtFrontLeg2
+  - first:
+      1: 100024
+    second: PA_WarriorRtRearLeg1
+  - first:
+      1: 100026
+    second: PA_WarriorRtRearLeg2
+  - first:
+      1: 100028
+    second: PA_WarriorTail1
+  - first:
+      1: 100030
+    second: PA_WarriorTail2
+  - first:
+      1: 100032
+    second: PA_WarriorTail3
+  - first:
+      1: 100034
+    second: PA_WarriorTail4
+  - first:
+      1: 100036
+    second: PA_WarriorTail5
+  - first:
+      1: 100038
+    second: PA_WarriorWeapon1
+  - first:
+      1: 100040
+    second: PA_WarriorWeapon2
+  - first:
+      1: 100042
+    second: swarmWarriorLtFrontLeg4
+  - first:
+      1: 100044
+    second: swarmWarriorLtFrontLeg5
+  - first:
+      1: 100046
+    second: swarmWarriorLtRearLeg3
+  - first:
+      1: 100048
+    second: swarmWarriorLtRearLeg4
+  - first:
+      1: 100050
+    second: swarmWarriorLtRearLeg5
+  - first:
+      1: 100052
+    second: swarmWarriorRtFrontLeg3
+  - first:
+      1: 100054
+    second: swarmWarriorRtFrontLeg4
+  - first:
+      1: 100056
+    second: swarmWarriorRtFrontLeg5
+  - first:
+      1: 100058
+    second: swarmWarriorRtRearLeg3
+  - first:
+      1: 100060
+    second: swarmWarriorRtRearLeg4
+  - first:
+      1: 100062
+    second: swarmWarriorRtRearLeg5
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: PA_Warrior
+  - first:
+      4: 400004
+    second: PA_WarriorBody
+  - first:
+      4: 400006
+    second: PA_WarriorControl
+  - first:
+      4: 400008
+    second: PA_WarriorLtFrontLeg1
+  - first:
+      4: 400010
+    second: PA_WarriorLtFrontLeg2
+  - first:
+      4: 400012
+    second: PA_WarriorLtFrontLeg3
+  - first:
+      4: 400014
+    second: PA_WarriorLtRearLeg1
+  - first:
+      4: 400016
+    second: PA_WarriorLtRearLeg2
+  - first:
+      4: 400018
+    second: PA_WarriorRoot
+  - first:
+      4: 400020
+    second: PA_WarriorRtFrontLeg1
+  - first:
+      4: 400022
+    second: PA_WarriorRtFrontLeg2
+  - first:
+      4: 400024
+    second: PA_WarriorRtRearLeg1
+  - first:
+      4: 400026
+    second: PA_WarriorRtRearLeg2
+  - first:
+      4: 400028
+    second: PA_WarriorTail1
+  - first:
+      4: 400030
+    second: PA_WarriorTail2
+  - first:
+      4: 400032
+    second: PA_WarriorTail3
+  - first:
+      4: 400034
+    second: PA_WarriorTail4
+  - first:
+      4: 400036
+    second: PA_WarriorTail5
+  - first:
+      4: 400038
+    second: PA_WarriorWeapon1
+  - first:
+      4: 400040
+    second: PA_WarriorWeapon2
+  - first:
+      4: 400042
+    second: swarmWarriorLtFrontLeg4
+  - first:
+      4: 400044
+    second: swarmWarriorLtFrontLeg5
+  - first:
+      4: 400046
+    second: swarmWarriorLtRearLeg3
+  - first:
+      4: 400048
+    second: swarmWarriorLtRearLeg4
+  - first:
+      4: 400050
+    second: swarmWarriorLtRearLeg5
+  - first:
+      4: 400052
+    second: swarmWarriorRtFrontLeg3
+  - first:
+      4: 400054
+    second: swarmWarriorRtFrontLeg4
+  - first:
+      4: 400056
+    second: swarmWarriorRtFrontLeg5
+  - first:
+      4: 400058
+    second: swarmWarriorRtRearLeg3
+  - first:
+      4: 400060
+    second: swarmWarriorRtRearLeg4
+  - first:
+      4: 400062
+    second: swarmWarriorRtRearLeg5
+  - first:
+      43: 4300000
+    second: PA_Warrior
+  - first:
+      74: 7400000
+    second: PA_WarriorForward_Clip
+  - first:
+      74: 7400002
+    second: PA_WarriorBackward_Clip
+  - first:
+      74: 7400004
+    second: PA_WarriorLeft_Clip
+  - first:
+      74: 7400006
+    second: PA_WarriorRight_Clip
+  - first:
+      74: 7400008
+    second: PA_WarriorStop_Clip
+  - first:
+      74: 7400010
+    second: PA_WarriorIdle_Clip
+  - first:
+      74: 7400012
+    second: PA_WarriorAttack_Clip
+  - first:
+      74: 7400014
+    second: PA_WarriorCollapse_Clip
+  - first:
+      74: 7400016
+    second: PA_WarriorRecover_Clip
+  - first:
+      74: 7400018
+    second: PA_WarriorDeath_Clip
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: PA_Warrior
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 1
     materialSearch: 2
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -96,16 +252,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: PA_WarriorForward_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 1
       lastFrame: 20
       wrapMode: 0
@@ -134,6 +294,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorBackward_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 20
       lastFrame: 40
       wrapMode: 0
@@ -162,6 +323,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorLeft_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 40
       lastFrame: 60
       wrapMode: 0
@@ -190,6 +352,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorRight_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 60
       lastFrame: 80
       wrapMode: 0
@@ -218,6 +381,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorStop_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 80
       lastFrame: 100
       wrapMode: 0
@@ -246,6 +410,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorIdle_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 100
       lastFrame: 140
       wrapMode: 0
@@ -274,6 +439,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorAttack_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 140
       lastFrame: 210
       wrapMode: 0
@@ -302,6 +468,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorCollapse_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 210
       lastFrame: 220
       wrapMode: 0
@@ -330,6 +497,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorRecover_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 220
       lastFrame: 250
       wrapMode: 0
@@ -358,6 +526,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PA_WarriorDeath_Clip
       takeName: Take 001
+      internalID: 0
       firstFrame: 250
       lastFrame: 270
       wrapMode: 0
@@ -389,26 +558,45 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -418,15 +606,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 1
   userData: 
-  assetBundleName: 
+  assetBundleName: pa_warrior
   assetBundleVariant: 

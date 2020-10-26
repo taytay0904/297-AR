@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 3874352215
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: pa_drone
+      Dependencies: {}
+    Info_1:
+      Name: pa_warrior
+      Dependencies: {}
