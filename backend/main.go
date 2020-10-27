@@ -7,6 +7,7 @@ import (
 
 func main() {
 
+
 	r := gin.Default()
 	c := controller.NewController()
 	r.Static("/assets", "./assets")
@@ -22,6 +23,24 @@ func main() {
 		{
 			detail.POST("getDetail", c.GetDetail)
 		}
+
+
+// 	http.HandleFunc("/", dog)
+// 	http.HandleFunc("/model", dogPic)
+// 	http.ListenAndServe(":8080", nil)
+// }
+
+// func dog(w http.ResponseWriter, req *http.Request) {
+// 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+// 	io.WriteString(w, `<img src = "/toby.jpg">`)
+// }
+
+// func dogPic(w http.ResponseWriter, req *http.Request) {
+// 	f, err := os.Open("pa_warrior")
+// 	if err != nil {
+// 		http.Error(w, "file not found", 404)
+// 		return
+
 	}
 
 	r.Run()

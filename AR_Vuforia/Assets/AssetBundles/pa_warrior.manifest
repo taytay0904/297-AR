@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1380265233
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1d580f99d8fc4972ac8165dbb22e3a36
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e4db28cc6f3de651e1884fd2e6227047
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/uploads-files-314047-PA_SciFiCombatants/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.fbx
+Dependencies: []
