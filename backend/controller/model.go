@@ -9,6 +9,12 @@ import (
 	"github.com/zijianguan0204/297AR/model"
 )
 
+func (ct *Controller) Get1ModelListFromString(c *gin.Context) {
+
+	jsonString := "[{\"id\":\"1\",\"name\":\"Robert_Cai\",\"modelPath\":\"/assets/.mod/pa_drone\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"},{\"id\":\"2\",\"name\":\"Kun_Su\",\"modelPath\":\"/assets/.mod/pa_warrior\",\"detailPath\":\"fake_detail_path2\",\"soundPath\":\"fake_sound_path2\",\"animationPath\":\"fake_am_path2\"}]"
+	c.String(200, jsonString)
+}
+
 func (ct *Controller) GetModelList(c *gin.Context) {
 
 	// connect to the db
@@ -30,7 +36,7 @@ func (ct *Controller) GetModelList(c *gin.Context) {
 		animationPath string
 	)
 	modelList := []model.ModelOutput{}
-	rows, err := db.Query("SELECT * from mode")
+	rows, err := db.Query("SELECT * from model")
 	if err != nil {
 		if strings.Contains(err.Error(), "Access denied") {
 			message := model.Message{
@@ -50,23 +56,24 @@ func (ct *Controller) GetModelList(c *gin.Context) {
 			if err != nil {
 				log.Fatal(err)
 			}
-		}
-		if id == "0" {
-			message := model.Message{
-				Message: "Model does not exist",
+			if id == "" {
+				message := model.Message{
+					Message: "Model does not exist",
+				}
+				c.JSON(404, message)
+			} else {
+				model := model.ModelOutput{
+					ID:            id,
+					Name:          name,
+					ModelPath:     modelPath,
+					DetailPath:    detailPath,
+					SoundPath:     soundPath,
+					AnimationPath: animationPath,
+				}
+				modelList = append(modelList, model)
 			}
-			c.JSON(404, message)
-		} else {
-			model := model.ModelOutput{
-				ID:            id,
-				Name:          name,
-				ModelPath:     modelPath,
-				DetailPath:    detailPath,
-				SoundPath:     soundPath,
-				AnimationPath: animationPath,
-			}
-			modelList = append(modelList, model)
 		}
+
 	}
 	c.JSON(200, modelList)
 	defer rows.Close()

@@ -12,3 +12,16 @@ type ModelOutput struct {
 	SoundPath     string `json:"soundPath"`
 	AnimationPath string `json:"animationPath"`
 }
+
+type Model struct {
+	ID            string `json:"id"`
+	Name          string `json:"name"`
+	ModelPath     string `json:"modelPath"`
+	DetailPath    string `json:"detailPath"`
+	SoundPath     string `json:"soundPath"`
+	AnimationPath string `json:"animationPath"`
+}
+
+type Models struct {
+	Models []Model `json:"models"`
+}
