@@ -41,4 +41,10 @@ CREATE TABLE `model`.`detail` (
 --   `timestamp` date NOT NULL DEFAULT CURRENT_TIMESTAMP
 -- ); 
 
-select * from model
+insert into model values ("1", "Robert_Cai", "/assets/.mod/pa_drone", "fake_detail_path1", "fake_sound_path1", "fake_am_path1");
+insert into model values ("2", "Kun_Su", "/assets/.mod/pa_warrior", "fake_detail_path2", "fake_sound_path2", "fake_am_path2");
+insert into detail values ("1", "150m", "500kg", "iron", "Robert_Cai", DEFAULT);
+insert into detail values ("2", "110m", "5100kg", "meterial", "Kun_Su", DEFAULT);
+
+select * from model;
+select * from detail;
