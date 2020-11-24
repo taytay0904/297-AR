@@ -9,9 +9,9 @@ import (
 	"github.com/zijianguan0204/297AR/model"
 )
 
-func (ct *Controller) Get1ModelListFromString(c *gin.Context) {
+func (ct *Controller) GetModelListFromString(c *gin.Context) {
 
-	jsonString := "[{\"id\":\"1\",\"name\":\"Robert_Cai\",\"modelPath\":\"/assets/.mod/pa_drone\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"},{\"id\":\"2\",\"name\":\"Kun_Su\",\"modelPath\":\"/assets/.mod/pa_warrior\",\"detailPath\":\"fake_detail_path2\",\"soundPath\":\"fake_sound_path2\",\"animationPath\":\"fake_am_path2\"}]"
+	jsonString := "[{\"id\":\"1\",\"name\":\"A103\",\"modelPath\":\"/assets/.mod/pa_drone\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"},{\"id\":\"2\",\"name\":\"A404\",\"modelPath\":\"/assets/.mod/pa_warrior\",\"detailPath\":\"fake_detail_path2\",\"soundPath\":\"fake_sound_path2\",\"animationPath\":\"fake_am_path2\"},{\"id\":\"3\",\"name\":\"E45\",\"modelPath\":\"/assets/.mod/E45\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"},{\"id\":\"4\",\"name\":\"A103\",\"modelPath\":\"/assets/.mod/B25\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"},{\"id\":\"5\",\"name\":\"B25\",\"modelPath\":\"/assets/.mod/C73\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"},{\"id\":\"6\",\"name\":\"C73\",\"modelPath\":\"/assets/.mod/A103\",\"detailPath\":\"fake_detail_path\",\"soundPath\":\"fake_sound_path\",\"animationPath\":\"fake_am_path\"}]"
 	c.String(200, jsonString)
 }
 

@@ -21,7 +21,3 @@ type Model struct {
 	SoundPath     string `json:"soundPath"`
 	AnimationPath string `json:"animationPath"`
 }
-
-type Models struct {
-	Models []Model `json:"models"`
-}

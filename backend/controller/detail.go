@@ -95,26 +95,35 @@ func (ct *Controller) GetDetail(c *gin.Context) {
 
 func (ct *Controller) GetDetailFromString(c *gin.Context) {
 
-	body := c.Request.Body
-	value, err := ioutil.ReadAll(body)
-	if err != nil {
-		fmt.Println(err.Error())
-	}
+	// body := c.Request.Body
+	// value, err := ioutil.ReadAll(body)
+	// if err != nil {
+	// 	fmt.Println(err.Error())
+	// }
 
-	var input model.DetailInput
-	er := json.Unmarshal([]byte(value), &input)
-	if er != nil {
-		fmt.Println(err.Error())
-	}
-	e := reflect.ValueOf(&input).Elem()
-	modelID := fmt.Sprint(e.Field(0).Interface())
+	// var input model.DetailInput
+	// er := json.Unmarshal([]byte(value), &input)
+	// if er != nil {
+	// 	fmt.Println(err.Error())
+	// }
+	// e := reflect.ValueOf(&input).Elem()
+	// modelID := fmt.Sprint(e.Field(0).Interface())
 
+	modelID := c.Param("modelID")
 	//get info from string
 	var jsonString string
 	if string(modelID) == "1" {
-		jsonString = "{\"weight\":\"500kg\",\"height\":\"150m\",\"built\":\"iron\",\"desinger\":\"Robert_Cai\"}"
+		jsonString = "{\"weight\":\"15kg\",\"height\":\"1m\",\"built\":\"iron\",\"desinger\":\"Robert_Cai\"}"
 	} else if string(modelID) == "2" {
-		jsonString = "{\"weight\":\"5100kg\",\"height\":\"110m\",\"built\":\"material\",\"desinger\":\"Kun_Su\"}"
+		jsonString = "{\"weight\":\"50kg\",\"height\":\"5m\",\"built\":\"Copper, iron, Alloy\",\"desinger\":\"Kun_Su\"}"
+	} else if string(modelID) == "3" {
+		jsonString = "{\"weight\":\"23kg\",\"height\":\"3m\",\"built\":\"Alloy, Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
+	} else if string(modelID) == "4" {
+		jsonString = "{\"weight\":\"13kg\",\"height\":\"1m\",\"built\":\"Alloy, Plastic, Glass\",\"desinger\":\"Robert_Cai\"}"
+	} else if string(modelID) == "5" {
+		jsonString = "{\"weight\":\"43kg\",\"height\":\"4m\",\"built\":\"Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
+	} else if string(modelID) == "6" {
+		jsonString = "{\"weight\":\"61kg\",\"height\":\"5m\",\"built\":\"Iron, Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
 	}
 	c.String(200, jsonString)
 
