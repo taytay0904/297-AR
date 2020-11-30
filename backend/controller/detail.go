@@ -120,11 +120,12 @@ func (ct *Controller) GetDetailFromString(c *gin.Context) {
 		jsonString = "{\"weight\":\"23kg\",\"height\":\"3m\",\"built\":\"Alloy, Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
 	} else if string(modelID) == "4" {
 		jsonString = "{\"weight\":\"13kg\",\"height\":\"1m\",\"built\":\"Alloy, Plastic, Glass\",\"desinger\":\"Robert_Cai\"}"
-	} else if string(modelID) == "5" {
-		jsonString = "{\"weight\":\"43kg\",\"height\":\"4m\",\"built\":\"Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
-	} else if string(modelID) == "6" {
-		jsonString = "{\"weight\":\"61kg\",\"height\":\"5m\",\"built\":\"Iron, Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
 	}
+	// else if string(modelID) == "5" {
+	// 	jsonString = "{\"weight\":\"43kg\",\"height\":\"4m\",\"built\":\"Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
+	// } else if string(modelID) == "6" {
+	// 	jsonString = "{\"weight\":\"61kg\",\"height\":\"5m\",\"built\":\"Iron, Plastic, Glass\",\"desinger\":\"Taylor_Yang\"}"
+	// }
 	c.String(200, jsonString)
 
 	// connect to the db
